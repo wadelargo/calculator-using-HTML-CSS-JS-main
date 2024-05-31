@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div id="container">
+        <header>
+            <h3>Calculator</h3>
+            <div id="windows_buttons">
+                <img id="min" src="sources/subtract.png" alt="Not available">
+                <div id="max"></div>
+                <img id="close" src="sources/multiply.png" alt="Not available">
+            </div>
+        </header>
+        <section id="bh">
+            <img id="menu" src="sources/menu.png" alt="Not available">
+            <h2>Standard</h2>
+            <img id="history" src="sources/hist.png" alt="Not available">
+        </section>
+        <section id="display">
+            <div id="value"></div>
+        </section>
+        <section>
+            <div id="buttons">
+                <button onclick="display('%')"><h2>%</h2></button>
+                <button onclick="Sqrt()"><img src="sources/sqrt.png" alt="Not available"></button>
+                <button onclick="Sqr()"><h2>x<sup>2</sup></h2></button>
+                <button onclick=""><img src="sources/fraction.png" alt="Not available"></button>
+                <button onclick=""><h2>CE</h2></button>
+                <button onclick="Clear()"><h2>C</h2></button>
+                <button onclick="del()"><img src="sources/backspace.png" alt="Not available"></button>
+                <button onclick="display('/')"><img src="sources/divide.png" alt="Not available"></button>
+                <button onclick="display('7')"><h2>7</h2></button>
+                <button onclick="display('8')"><h2>8</h2></button>
+                <button onclick="display('9')"><h2>9</h2></button>
+                <button onclick="display('*')"><img src="sources/multiply.png" alt="Not available"></button>
+                <button onclick="display('4')"><h2>4</h2></button>
+                <button onclick="display('5')"><h2>5</h2></button>
+                <button onclick="display('6')"><h2>6</h2></button>
+                <button onclick="display('-')"><img src="sources/subtract.png" alt="Not available"></button>
+                <button onclick="display('1')"><h2>1</h2></button>
+                <button onclick="display('2')"><h2>2</h2></button>
+                <button onclick="display('3')"><h2>3</h2></button>
+                <button onclick="display('+')"><img src="sources/addition.png" alt="Not available"></button>
+                <button onclick=""><img src="sources/add_sub.png" alt="Not available"></button>
+                <button onclick="display('0')"><h2>0</h2></button>
+                <button onclick="display('.')"><h2>.</h2></button>
+                <button id="eq" onclick="output()"><img src="sources/equal.png" alt="Not available"></button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

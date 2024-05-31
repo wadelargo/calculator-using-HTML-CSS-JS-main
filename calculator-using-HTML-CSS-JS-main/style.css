@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+ 
+body{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+    width: 319px;
+    height: 536px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header h3{
+    position: absolute;
+    width: 55px;
+    height: 15px;
+    left: 14px;
+    top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+header #min{
+    position: absolute;
+    top: 15px;
+    left: 202px;  
+    width: 14px; 
+}
+
+header #min:hover{
+    filter: invert(50%)
+}
+
+header #max{
+    position: absolute;
+    top: 10px;
+    left: 248px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+header #max:hover{
+    filter: invert(50%)
+}
+
+header #close{
+    position: absolute;
+    top: 10px;
+    left: 290px;
+    width: 12px;
+    height: 14px;
+}
+
+header #close:hover{
+    filter: invert(50%)
+}
+
+#bh #menu{
+    position: absolute;
+    top: 52px;
+    left: 16px;
+}
+
+#bh #menu:hover{
+    filter: invert(50%)
+}
+
+#bh h2{
+    position: absolute;
+    top: 47px;
+    left: 45px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#bh #history{
+    position: absolute;
+    top: 50px;
+    left: 288px;
+    width: 15px;
+    height: 17px;
+}
+
+#bh #history:hover{
+    filter: invert(50%)
+}
+
+#display #value{
+    border-style: hidden;
+    position: absolute;
+    width: 308px;
+    left: 5px;
+    height: 90px;
+    top: 90px;
+    font-style: normal;
+    border-radius: 15px 15px 0 0;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 61px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: end;
+    padding: 10px;
+    
+}
+#display #value:focus{
+    outline: none;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate(5px, 182px);
+}
+
+#buttons button{
+    width: 77px;
+    height: 58px;
+    background: rgba(0, 0, 0, 0.4); 
+    color: white;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+#buttons button:nth-child(24){
+    background-color: rgba(0, 132, 255, 0.6);
+}
+#buttons button:nth-child(9),
+#buttons button:nth-child(10),
+#buttons button:nth-child(11),
+#buttons button:nth-child(13),
+#buttons button:nth-child(14),
+#buttons button:nth-child(15),
+#buttons button:nth-child(17),
+#buttons button:nth-child(18),
+#buttons button:nth-child(19),
+#buttons button:nth-child(22){
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+#buttons button:nth-child(7) img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+#buttons button:nth-child(1),
+#buttons button:nth-child(2),
+#buttons button:nth-child(3),
+#buttons button:nth-child(4),
+#buttons button:nth-child(5),
+#buttons button:nth-child(6),
+#buttons button:nth-child(7),
+#buttons button:nth-child(8),
+#buttons button:nth-child(12),
+#buttons button:nth-child(16),
+#buttons button:nth-child(20),
+#buttons button:nth-child(21),
+#buttons button:nth-child(23),
+#buttons button:nth-child(24){
+    filter: opacity(70%);
+}
+
+#buttons button:nth-child(24):hover{
+    background-color: rgb(0, 132, 255);
+}
